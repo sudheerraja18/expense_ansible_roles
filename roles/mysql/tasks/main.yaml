@@ -21,7 +21,7 @@
   community.mysql.mysql_info:
     login_user: root
     login_password: "{{ myql_root_password }}"
-    login_host: db.harvargurram.online
+    login_host: "{{ mysql_host }}"
   register: mysql_info
   ignore_errors: True
 
